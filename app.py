@@ -18,7 +18,7 @@ from pypdf import PdfReader
 from shapely.geometry import shape
 
 BASE = Path(__file__).resolve().parent
-DATA = BASE / "data"
+DATA = BASE
 CSV_SHA = "df180d9e1509f3a63ed64d878d1d1a060067ba2b4399a13061b9a8a2e97aa321"
 PDF_SHA = "0f74d8fff2d094d16a6f9034a595fcd0b0ebea711dc809a76ac45316f5d101f3"
 CSV_NAME = "1인가구(연령별)_20261114125316.csv"
