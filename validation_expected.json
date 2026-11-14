@@ -1,0 +1,159 @@
+{
+  "independently_checked_cells": 1287,
+  "summary": [
+    {
+      "metric": "food_shortage",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 0.050722861173631124
+    },
+    {
+      "metric": "food_shortage",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 0.023812631714486495
+    },
+    {
+      "metric": "debt_burden",
+      "household_type": "1인가구",
+      "valid_n": 218,
+      "weight_sum": 311.68115502215016,
+      "value": 0.5966003317755219
+    },
+    {
+      "metric": "debt_burden",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 872,
+      "weight_sum": 856.1949659364589,
+      "value": 0.5784018744573158
+    },
+    {
+      "metric": "interest_arrears",
+      "household_type": "1인가구",
+      "valid_n": 218,
+      "weight_sum": 311.68115502215016,
+      "value": 0.03127552300632319
+    },
+    {
+      "metric": "interest_arrears",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 872,
+      "weight_sum": 856.1949659364589,
+      "value": 0.03158699033021155
+    },
+    {
+      "metric": "no_money_help",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 0.41585392231660495
+    },
+    {
+      "metric": "no_money_help",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 0.3408116082964225
+    },
+    {
+      "metric": "loneliness",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 0.305144393357717
+    },
+    {
+      "metric": "loneliness",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 0.22479025487628468
+    },
+    {
+      "metric": "no_emotional_help",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 0.10444679923444977
+    },
+    {
+      "metric": "no_emotional_help",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 0.08673893990438586
+    },
+    {
+      "metric": "no_care_help",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 0.21381477002865693
+    },
+    {
+      "metric": "no_care_help",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 0.18247960120253964
+    },
+    {
+      "metric": "depressed_week",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 0.2980579685196096
+    },
+    {
+      "metric": "depressed_week",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 0.3135764769437873
+    },
+    {
+      "metric": "poor_health",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 0.02963266511719227
+    },
+    {
+      "metric": "poor_health",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 0.012154749933227254
+    },
+    {
+      "metric": "annual_income",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 4206.659703882885
+    },
+    {
+      "metric": "annual_income",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 7857.315402668476
+    },
+    {
+      "metric": "monthly_spending",
+      "household_type": "1인가구",
+      "valid_n": 821,
+      "weight_sum": 1180.4316826695524,
+      "value": 176.77818080383057
+    },
+    {
+      "metric": "monthly_spending",
+      "household_type": "다인가구 응답가구",
+      "valid_n": 2183,
+      "weight_sum": 1823.5683254249432,
+      "value": 345.2827889635997
+    }
+  ]
+}

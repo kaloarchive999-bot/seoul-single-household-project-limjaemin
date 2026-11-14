@@ -1,0 +1,105 @@
+{
+  "files": {
+    "household_xlsx": {
+      "original_filename": "welfare_household.xlsx",
+      "sha256": "49a69a42ce8649e42db2e18738d878bae1543eff5099100c9748be47c809c363",
+      "bytes": 14718566
+    },
+    "members_xlsx": {
+      "original_filename": "welfare_members.xlsx",
+      "sha256": "23278ed7868691bd9d54a86db12b5c592175ca4eb45a71540536644d80a4eaf5",
+      "bytes": 21831758
+    },
+    "household_sav": {
+      "original_filename": "welfare_household.sav",
+      "sha256": "1ba8fa17c7638463556abf8eb77ecbdfcd40b9aad2c66d406fd57a86e95067c3",
+      "bytes": 4726033
+    },
+    "members_sav": {
+      "original_filename": "welfare_members.sav",
+      "sha256": "26d213b1095d305f94c6d6cdc5c9d37d8743a9434854a1c08c1a1b6bf5025272",
+      "bytes": 6970957
+    },
+    "depression": {
+      "original_filename": "depression.csv",
+      "sha256": "1a19041d6734ba0f12bcd285a00e08c6200f66a428d8d28d652f444da7c5fc8a",
+      "bytes": 1822
+    }
+  },
+  "household_rows": 3004,
+  "household_columns": 1311,
+  "member_rows": 6251,
+  "member_columns": 917,
+  "single_household_n": 821,
+  "multiple_household_n": 2183,
+  "single_member_rows": 821,
+  "household_size_sum": 6251,
+  "weight_sum": 3004.0000080944956,
+  "identifier_audit": {
+    "household_only_ids": [
+      3005
+    ],
+    "member_only_ids": [
+      695
+    ],
+    "same_id_household_size_mismatch_n": 1571,
+    "join_performed": false,
+    "action": "파일별 독립 검증. 분석은 가구 Excel만 사용. IDX 보정·행순서 매칭·통합 금지."
+  },
+  "member_within_household_repeated_items": [
+    "D4",
+    "E2_1",
+    "E2_2",
+    "E2_3",
+    "E3_4",
+    "C10_3",
+    "RES_Q1",
+    "RES_A1_4",
+    "RES_A1_5_4",
+    "B4",
+    "B12",
+    "B12_3",
+    "B12_4",
+    "B7_1",
+    "B7_2",
+    "B7_3",
+    "B7_4",
+    "B7_5",
+    "B7_6"
+  ],
+  "independent_marginals_agree": [
+    "D4",
+    "E2_1",
+    "E2_2",
+    "E2_3",
+    "E3_4",
+    "C10_3",
+    "RES_Q1",
+    "RES_A1_4",
+    "RES_A1_5_4",
+    "B4",
+    "B12",
+    "B7_1",
+    "B7_2",
+    "B7_3",
+    "B7_4",
+    "B7_5",
+    "B7_6"
+  ],
+  "sample_age_distribution": {
+    "30대": 207,
+    "60대": 177,
+    "40대": 140,
+    "70세 이상": 121,
+    "50대": 106,
+    "20대": 70
+  },
+  "raw_missing_debt_items": {
+    "B12_3": 1914,
+    "B12_4": 1914
+  },
+  "microdata_publication": "개별 응답 원본 및 행 단위 사본은 배포 패키지에 포함하지 않음. 4개 차원의 집계만 사용.",
+  "sav_policy": "SAV는 원본 체크섬·헤더의 표본수만 확인한 보조 원본. Excel과 합산하지 않음. 계산은 공식 코드북에 대응한 Excel 기준.",
+  "no_imputation": true,
+  "cube_rows": 1287
+}

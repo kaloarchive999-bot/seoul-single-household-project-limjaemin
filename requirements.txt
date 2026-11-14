@@ -1,8 +1,8 @@
-# Python 3.12에서 검증한 실행 환경
+# Python 3.12에서 검증한 배포 환경
 streamlit==1.67.0
 pandas==3.1.0
+numpy==2.5.4
 plotly==7.1.0
 pypdf==6.21.4
 shapely==2.2.0
-# 회귀 테스트 실행용
-pytest>=8,<10
+scikit-learn==1.9.1

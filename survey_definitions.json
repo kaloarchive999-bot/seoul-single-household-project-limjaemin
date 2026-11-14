@@ -1,0 +1,220 @@
+{
+  "survey": "서울연구원(2024), 2024년 서울복지실태조사",
+  "survey_year": 2024,
+  "source_url": "https://data.si.re.kr/node/65462/",
+  "weight_variable": "twgt",
+  "weight_rule": "표준화 가구 가중치. 가구당 실제 응답자 1명 기준. 개인 모집단 대표 가중치로 간주하지 않음.",
+  "age_variable": "RES_A1_5_4 (제공된 만 나이)",
+  "sex_variable": "RES_A1_4",
+  "household_filter": "A1_1 == 1",
+  "regional_variable": "D_SQ1: 5개 권역만 제공. 25개 자치구 추정 금지.",
+  "pooling": "선택 연령/성별/권역의 분자·분모 가중합을 합산. 단순 비율 평균 금지.",
+  "uncertainty": "설계기반 신뢰구간을 계산하지 않음. 유의성/인과효과를 주장하지 않음. n<30 경고는 앱의 보수적 탐색용 기준이며 공식 공표 기준이 아님.",
+  "missing_policy": "원본 미응답/비해당은 그대로 보존. 문항별 유효응답 분모에서만 분리. 0/평균/null로 원자료 대체 없음.",
+  "metrics": [
+    {
+      "id": "food_shortage",
+      "name": "경제적 이유로 먹을 것 부족",
+      "domain": "경제",
+      "kind": "binary",
+      "var": "D4",
+      "valid": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "yes": [
+        3,
+        4
+      ],
+      "period": "2023.9~2024.8",
+      "denominator": "식생활 문항 유효응답 가구",
+      "definition": "D4의 ③ 가끔 또는 ④ 자주 먹을 것이 부족. ② 다양성 부족은 포함하지 않음.",
+      "warning": "공식 빈곤율이 아니라 식품 부족 경험 응답 비율입니다."
+    },
+    {
+      "id": "debt_burden",
+      "name": "부채 상환 부담",
+      "domain": "경제",
+      "kind": "binary",
+      "var": "B12_4",
+      "valid": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "yes": [
+        4,
+        5
+      ],
+      "eligible": "debt_positive",
+      "period": "조사 당시",
+      "denominator": "현재 부채(B12>0)가 있는 유효응답 가구",
+      "definition": "B12>0 중 B12_4의 ④ 약간 부담 또는 ⑤ 매우 부담.",
+      "warning": "무부채 가구는 비해당이며 0점 응답으로 대체하지 않습니다. B12는 설문 정의상 전월세보증금을 포함합니다."
+    },
+    {
+      "id": "interest_arrears",
+      "name": "부채 이자 연체 경험",
+      "domain": "경제",
+      "kind": "binary",
+      "var": "B12_3",
+      "valid": [
+        1,
+        2
+      ],
+      "yes": [
+        1
+      ],
+      "eligible": "debt_positive",
+      "period": "2023.9~2024.8",
+      "denominator": "현재 부채(B12>0)가 있는 유효응답 가구",
+      "definition": "B12>0 중 B12_3=① 있다.",
+      "warning": "무부채 가구는 비해당입니다. 주거비 체납이나 모든 금융 연체를 뜻하지 않습니다."
+    },
+    {
+      "id": "no_money_help",
+      "name": "큰돈을 빌릴 상대 없음",
+      "domain": "관계·지원",
+      "kind": "binary",
+      "var": "E2_2",
+      "valid": [
+        1,
+        2
+      ],
+      "yes": [
+        2
+      ],
+      "period": "조사 당시",
+      "denominator": "E2_2 유효응답자",
+      "definition": "E2_2=② 없다.",
+      "warning": "경제적 지원망 지표이지 소득 빈곤율이 아닙니다."
+    },
+    {
+      "id": "loneliness",
+      "name": "혼자라고 느낌 · 가끔/항상",
+      "domain": "관계·지원",
+      "kind": "binary",
+      "var": "E3_4",
+      "valid": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "yes": [
+        3,
+        4
+      ],
+      "period": "조사 당시 문항",
+      "denominator": "E3_4 유효응답자",
+      "definition": "E3_4의 ③ 가끔 그런 편 또는 ④ 항상 그렇다.",
+      "warning": "외로움 척도 20문항 중 단일 문항의 분석용 구분입니다. 전체 척도 진단이나 선행연구의 62.1%와 동일한 지표가 아닙니다."
+    },
+    {
+      "id": "no_emotional_help",
+      "name": "우울할 때 이야기 상대 없음",
+      "domain": "관계·지원",
+      "kind": "binary",
+      "var": "E2_1",
+      "valid": [
+        1,
+        2
+      ],
+      "yes": [
+        2
+      ],
+      "period": "조사 당시",
+      "denominator": "E2_1 유효응답자",
+      "definition": "E2_1=② 없다.",
+      "warning": "모든 형태의 사회적 고립을 포괄하는 진단은 아닙니다."
+    },
+    {
+      "id": "no_care_help",
+      "name": "아플 때 집안일 부탁할 상대 없음",
+      "domain": "관계·지원",
+      "kind": "binary",
+      "var": "E2_3",
+      "valid": [
+        1,
+        2
+      ],
+      "yes": [
+        2
+      ],
+      "period": "조사 당시",
+      "denominator": "E2_3 유효응답자",
+      "definition": "E2_3=② 없다.",
+      "warning": "돌봄 지원망 응답입니다. 실제 돌봄서비스 수급률이 아닙니다."
+    },
+    {
+      "id": "depressed_week",
+      "name": "지난 1주 우울한 감정 · 1~2일 이상",
+      "domain": "건강",
+      "kind": "binary",
+      "var": "C10_3",
+      "valid": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "yes": [
+        2,
+        3,
+        4
+      ],
+      "period": "지난 1주",
+      "denominator": "C10_3 유효응답자",
+      "definition": "C10_3의 ② 1~2일, ③ 3~4일, ④ 5일 이상.",
+      "warning": "우울증 진단율이나 다른 문항으로 작성된 공표 우울감 경험률과 다릅니다."
+    },
+    {
+      "id": "poor_health",
+      "name": "주관적 건강 · 좋지 않음",
+      "domain": "건강",
+      "kind": "binary",
+      "var": "respondent_health",
+      "valid": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "yes": [
+        4,
+        5
+      ],
+      "period": "조사 당시",
+      "denominator": "실제 응답자의 건강상태 유효응답",
+      "definition": "RES_Q1에 해당하는 C1_1_가구원번호의 ④ 건강하지 않은 편 또는 ⑤ 건강이 아주 안 좋음.",
+      "warning": "의학적 진단이나 장애율이 아닙니다."
+    },
+    {
+      "id": "annual_income",
+      "name": "2023년 세전 연소득 · 6항목 합계 평균",
+      "domain": "소득·지출",
+      "kind": "mean",
+      "var": "income_six_sum",
+      "period": "2023.1~12",
+      "denominator": "B7_1~B7_6이 모두 관측된 가구",
+      "definition": "근로·사업·재산·공적이전·사적이전·기타소득의 합계. 단위: 만 원/년.",
+      "warning": "기타소득(증여·상속 등)을 포함합니다. 공식 경상소득/가처분소득/빈곤선과 동일시하지 않습니다. 다인가구 값은 가구 총액이며 균등화 소득이 아닙니다."
+    },
+    {
+      "id": "monthly_spending",
+      "name": "2023년 월평균 생활비 · 평균",
+      "domain": "소득·지출",
+      "kind": "mean",
+      "var": "B4",
+      "period": "2023년 월평균",
+      "denominator": "B4 유효응답 가구",
+      "definition": "B4 원문 금액의 가중평균. 단위: 만 원/월.",
+      "warning": "2024년 현재 지출이 아닙니다. 다인가구 값은 가구 전체 금액입니다."
+    }
+  ]
+}
